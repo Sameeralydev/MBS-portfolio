@@ -37,8 +37,20 @@ export default function About() {
                     <img src='/UmerRiaz.png' alt="" className="w-64 sm:w-80 rounded-3xl max-w-none" />
 
                     <div className="bg-white w-1/2 aspect-square absolute right-0 bottom-0 rounded-full translate-x-1/4 translate-y-1/3 shadow-[0_4px_55px_rgba(149,0,162,0.15)] flex items-center justify-center">
-                        <img src="./assets/circular-text.png" alt="" className="w-full animate-spin_slow" />
-                        <img src="./assets/dev-icon.png" alt="" className="w-1/4 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                        <svg viewBox="0 0 100 100" className="w-full h-full animate-spin_slow">
+                            <defs>
+                                <path
+                                    id="about-badge-circle"
+                                    d="M 50,50 m -34,0 a 34,34 0 1,1 68,0 a 34,34 0 1,1 -68,0"
+                                />
+                            </defs>
+                            <text fill="#4b5563" fontSize="7" letterSpacing="1.6" className="uppercase font-Ovo">
+                                <textPath href="#about-badge-circle">
+                                    Educationist, Enterprenure & Leader
+                                </textPath>
+                            </text>
+                        </svg>
+                        <span className="text-2xl sm:text-4xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">👨</span>
                     </div>
                 </div>
                 <div className="flex-1">
